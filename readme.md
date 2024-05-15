@@ -1,3 +1,10 @@
+**a forked version, 用于支持国产大模型 ...**
+
+- [x] 适配零一万物 - 使用 ChatOpenAI，调用 /chat/completion 接口
+- [x] 增加转换语言的 prompt，定制返回多种语言
+  - [ ] 增加临时切换语言的 prompt 暗号
+- [ ] 适配 Kimi
+
 # Logseq AI Assistant
 
 A powerful tool that enhances your Logseq experience by allowing you to interact with AI models like OpenAI's `gpt-3.5-turbo`.
@@ -12,9 +19,10 @@ enabling you to achieve more efficient and creative workflows within Logseq.
 > Inspired by [Notion AI](https://www.notion.so/product/ai) and [Raycast AI](https://www.raycast.com/ai)
 
 ## Features
+
 - Seamless integration with Logseq
 - Customizable prompt support
-- Easy-to-use built-in prompts 
+- Easy-to-use built-in prompts
 - Using a custom Open AI basePath
 
 ## Install
@@ -28,6 +36,7 @@ enabling you to achieve more efficient and creative workflows within Logseq.
 - unzip the zip file and load from Logseq plugins page
 
 ## Configuration
+
 Before using the plugin, you need to configure it according to your preferences.
 
 - **API Key**: Enter your OpenAI API key in this field. If you don't have an API key yet, visit the [OpenAI](https://platform.openai.com/account/api-keys) to obtain one.
@@ -79,7 +88,9 @@ See all built-in prompts [here](https://github.com/ahonn/logseq-plugin-ai-assist
 ![](https://user-images.githubusercontent.com/9718515/226259576-a1193b51-8a57-4cad-9270-f5bc30a5ba29.gif)
 
 ## Contribution
+
 Issues and PRs are welcome!
 
 ## Licence
+
 MIT
