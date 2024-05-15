@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Anddd7/logseq-plugin-ai-assistant/compare/v1.0.0...v1.1.0) (2024-05-15)
+
+
+### Features
+
+* add language setting ([79d574d](https://github.com/Anddd7/logseq-plugin-ai-assistant/commit/79d574dcad6ee8d6526c55a164d96c2f31652150))
+
 # 1.0.0 (2024-05-15)
 
 
