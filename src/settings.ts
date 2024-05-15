@@ -2,6 +2,7 @@ import { SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin.user';
 import { IPrompt } from './prompts/type';
 
 export interface ISettings {
+  language: string;
   apiKey: string;
   basePath: string;
   model: string;
@@ -13,6 +14,13 @@ export interface ISettings {
 }
 
 const settings: SettingSchemaDesc[] = [
+  {
+    key: 'language',
+    type: 'string',
+    title: 'Language',
+    description: 'Language prompt for AI.',
+    default: '请用中文回答',
+  },
   {
     key: 'apiKey',
     type: 'string',

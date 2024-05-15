@@ -22,6 +22,7 @@ function getPrompts() {
 
 function main() {
   const {
+    language,
     apiKey,
     basePath,
     model: modelName,
@@ -79,7 +80,7 @@ function main() {
             inputVariables: ['content'],
           });
 
-        const input = (await prompt.format({ content })) + "\n请用中文回答";
+        const input = (await prompt.format({ content })) + `\n${language}`;
         const response = (await model.invoke(input)).content.toString();
 
         switch (output) {
