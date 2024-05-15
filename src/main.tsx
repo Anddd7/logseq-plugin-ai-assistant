@@ -17,9 +17,6 @@ function getPrompts() {
   if (customPrompts.enable) {
     prompts.push(...customPrompts.prompts);
   }
-  for (const prompt of prompts) {
-    prompt.prompt = prompt.prompt + '\n请用中文回答。';
-  }
   return prompts;
 }
 
@@ -82,7 +79,7 @@ function main() {
             inputVariables: ['content'],
           });
 
-        const input = await prompt.format({ content });
+        const input = (await prompt.format({ content })) + "\n请用中文回答";
         const response = (await model.invoke(input)).content.toString();
 
         switch (output) {
